@@ -1,7 +1,7 @@
 import pandas as pd
-df_qid_query = pd.read_csv(filepath_or_buffer='hidden_task\\qid_query.tsv', sep='\\t',engine ='python', names=['id_request', 'text_request'])
-df_qid_url = pd.read_csv(filepath_or_buffer='hidden_task\\qid_url_rating.tsv', sep='\\t',engine ='python', names=['id_request', 'url_request','url_relevance'])
-df_hostid_url = pd.read_csv(filepath_or_buffer='hidden_task\\hostid_url.tsv', sep='\\t',engine ='python', names=['id_host', 'url_request'])
+df_qid_query = pd.read_csv(filepath_or_buffer='open_task\\qid_query.tsv', sep='\\t',engine ='python', names=['id_request', 'text_request'])
+df_qid_url = pd.read_csv(filepath_or_buffer='open_task\\qid_url_rating.tsv', sep='\\t',engine ='python', names=['id_request', 'url_request','url_relevance'])
+df_hostid_url = pd.read_csv(filepath_or_buffer='open_task\\hostid_url.tsv', sep='\\t',engine ='python', names=['id_host', 'url_request'])
 
 pBreak = 0.15
 best_pFound = 0
